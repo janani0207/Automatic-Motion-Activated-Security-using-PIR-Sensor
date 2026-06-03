@@ -1,6 +1,6 @@
 # Automatic-Motion-Activated-Security-using-PIR-Sensor
 ## AIM:
-             To detect motion using a PIR sensor connected to an Arduino and trigger an LED (using the built-in LED) when motion is sensed.
+      To detect motion using a PIR sensor connected to an Arduino and trigger an LED (using the built-in LED) when motion is sensed.
              
 ## Hardware / Software Tools required:
 1.	 Arduino Uno R3 – 1 No
@@ -18,6 +18,11 @@
 PIR sensors are widely used in motion detection systems, security alarms, automatic lighting systems, and smart surveillance. They are popular due to their low power consumption, affordability, and ease of integration with microcontrollers such as the Arduino Uno. The sensor typically has three pins: VCC (power), GND (ground), and OUT (signal). When idle, the output pin remains LOW. Once motion is detected, the sensor sends a HIGH signal to the microcontroller, which can be used to trigger a response such as turning on an LED or activating an alarm.
 In this experiment, the PIR sensor is connected to an Arduino Uno board. The VCC pin of the sensor is connected to the 5V supply of the Arduino to power the sensor. The GND pin is connected to the Arduino’s ground. The OUT pin is connected to a digital input pin (pin 2 in this case) of the Arduino. The Arduino continuously monitors the state of the signal pin. If the signal pin goes HIGH, it means the sensor has detected motion, and the Arduino is programmed to turn ON the built-in LED on pin 13. If no motion is detected, the signal remains LOW, and the LED is turned OFF.
 Circuit Diagram:
+
+# Blockdiagram
+
+<img width="1002" height="666" alt="Screenshot 2026-06-03 101031" src="https://github.com/user-attachments/assets/18243fba-1f2e-4d71-b410-569ef05cc5f1" />
+
  
 ## Procedure: //Modify based on your circuit
 
@@ -93,6 +98,7 @@ void loop()
 ```
 # Output:
 
+<img width="542" height="501" alt="Screenshot 2026-06-03 101011" src="https://github.com/user-attachments/assets/712284d5-296c-456a-86f0-05e36a20f90d" />
 
 
 
